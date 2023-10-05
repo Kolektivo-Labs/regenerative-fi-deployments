@@ -18,6 +18,7 @@ export const NETWORKS = [
   'sepolia',
   'base',
   'fantom',
+  'localhost',
 ];
 
 export type Network = (typeof NETWORKS)[number];

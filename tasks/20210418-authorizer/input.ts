@@ -42,4 +42,7 @@ export default {
   fantom: {
     admin: '0x4fbe899d37fb7514adf2f41B0630E018Ec275a0C',
   },
+  localhost: {
+    admin: '0xB0a956D6557c6BA7A955F61B82d4821C9f765935',
+  },
 };
