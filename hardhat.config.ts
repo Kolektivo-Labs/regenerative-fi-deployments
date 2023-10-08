@@ -1,7 +1,7 @@
 import '@nomiclabs/hardhat-ethers';
 import '@nomiclabs/hardhat-vyper';
 import '@nomiclabs/hardhat-waffle';
-import 'hardhat-local-networks-config-plugin';
+// import 'hardhat-local-networks-config-plugin';
 import 'hardhat-ignore-warnings';
 import 'tsconfig-paths/register';
 
@@ -27,6 +27,9 @@ import {
   fetchTheGraphPermissions,
 } from './src/actionId';
 import { checkContractDeploymentAddresses, saveContractDeploymentAddresses } from './src/network';
+
+import './dev-tasks/local.ts';
+import './dev-tasks/utils.ts';
 
 const THEGRAPHURLS: { [key: string]: string } = {
   goerli: 'https://api.thegraph.com/subgraphs/name/balancer-labs/balancer-authorizer-goerli',
@@ -354,5 +357,41 @@ export default {
         },
       },
     ],
+  },
+  networks: {
+    mainnet: {
+      url: 'https://mainnet.rpc.endpoint/myAPIKey',
+      verificationAPIKey: 'mainnet-etherscan-API-key',
+    },
+    polygon: {
+      url: 'https://polygon.rpc.endpoint/myAPIKey',
+      verificationAPIKey: 'polygon-etherscan-API-key',
+    },
+    arbitrum: {
+      url: 'https://arbitrum.rpc.endpoint/myAPIKey',
+      verificationAPIKey: 'arbitrum-etherscan-API-key',
+    },
+    optimism: {
+      url: 'https://optimism.rpc.endpoint/myAPIKey',
+      verificationAPIKey: 'optimism-etherscan-API-key',
+    },
+    gnosis: {
+      url: 'https://gnosis.rpc.endpoint/myAPIKey',
+      verificationAPIKey: 'gnosis-etherscan-API-key',
+    },
+    bsc: {
+      url: 'https://bsc.rpc.endpoint/myAPIKey',
+      verificationAPIKey: 'bsc-etherscan-API-key',
+    },
+    goerli: {
+      url: 'https://eth-goerli.g.alchemy.com/v2/boa_XHt-n3q4XttBKLfVYp8ImfVpmmPk',
+      verificationAPIKey: 'UKN1A8ZEUJ15ZIBHZHXJFD6J8HNN1MF71I',
+      accounts: ['0xea0431c4700fc785f740a158ec40695f95380c5f0e648b51ef89580fa3c05beb'],
+    },
+  },
+  defaultConfig: {
+    gasPrice: 'auto',
+    gasMultiplier: 1,
+    accounts: ['0xea0431c4700fc785f740a158ec40695f95380c5f0e648b51ef89580fa3c05beb'],
   },
 };
