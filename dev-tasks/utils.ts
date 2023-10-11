@@ -2,7 +2,7 @@ import { task } from 'hardhat/config';
 import { HardhatRuntimeEnvironment } from 'hardhat/types';
 import fs from 'fs';
 import path from 'path';
-import { LOCAL_TOKEN_DIR } from './constants';
+import { TOKEN_DIR } from './constants';
 
 task('deploy-tokens', 'deploys specified amount of test tokens')
   .addParam('amount', 'amount of token contracts to be deplyoed')
@@ -20,7 +20,7 @@ task('deploy-tokens', 'deploys specified amount of test tokens')
       BAL: addresses[0],
       WETH: addresses[1],
     };
-    const filePath = path.join(LOCAL_TOKEN_DIR, 'localhost.json');
+    const filePath = path.join(TOKEN_DIR, 'localhost.json');
     fs.writeFileSync(filePath, JSON.stringify(mainTokens, null, 2));
   });
 
