@@ -434,6 +434,7 @@ export default {
     },
   },
   etherscan: {
+    apiKey: { alfajores: process.env.ALFAJORES_API_KEY },
     customChains: [
       {
         network: 'zkemv',
@@ -457,6 +458,14 @@ export default {
         urls: {
           apiURL: 'https://api.ftmscan.com/api',
           browserURL: 'https://ftmscan.com',
+        },
+      },
+      {
+        network: 'alfajores',
+        chainId: 44787,
+        urls: {
+          apiURL: 'https://api-alfajores.celoscan.io/api',
+          browserURL: 'https://alfajores.celoscan.io',
         },
       },
     ],
