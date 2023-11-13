@@ -1,3 +1,6 @@
+import { config as dotEnvConfig } from 'dotenv';
+dotEnvConfig();
+
 import '@nomiclabs/hardhat-ethers';
 import '@nomiclabs/hardhat-vyper';
 import '@nomiclabs/hardhat-waffle';
