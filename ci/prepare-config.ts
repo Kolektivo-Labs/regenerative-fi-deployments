@@ -45,6 +45,9 @@ if (process.env.CI) {
       },
       "fantom": {
         "url": "${process.env.FANTOM_RPC_ENDPOINT}"
+      },
+      "alfajores": {
+        "url": "${process.env.ALFAJORES_RPC_ENDPOINT}"
       }
     },
     "defaultConfig": {
