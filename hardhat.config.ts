@@ -37,6 +37,8 @@ import {
   saveTimelockAuthorizerConfig,
 } from './src/network';
 
+import './src/helpers/flatAddresses';
+
 const THEGRAPHURLS: { [key: string]: string } = {
   goerli: 'https://api.thegraph.com/subgraphs/name/balancer-labs/balancer-authorizer-goerli',
 };
