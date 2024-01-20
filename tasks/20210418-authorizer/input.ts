@@ -45,4 +45,7 @@ export default {
   alfajores: {
     admin: '0x5ACf124AD6333D3B23E391C37AA7B561d61Ec053',
   },
+  celo: {
+    admin: '0xE87a58e66b7ecE7A5adcE276766eD2887E114052',
+  },
 };
