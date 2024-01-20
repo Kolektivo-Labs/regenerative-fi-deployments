@@ -42,4 +42,7 @@ export default {
   fantom: {
     admin: '0x4fbe899d37fb7514adf2f41B0630E018Ec275a0C',
   },
+  alfajores: {
+    admin: '0x5ACf124AD6333D3B23E391C37AA7B561d61Ec053',
+  },
 };

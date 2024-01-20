@@ -1,0 +1,59 @@
+{
+  "20210418-authorizer": {
+    "contracts": [
+      {
+        "name": "Authorizer",
+        "address": "0x03eCF2CCfA707aeE1E5F07E920796c62bB1fb5Bc"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  "20210418-vault": {
+    "contracts": [
+      {
+        "name": "Vault",
+        "address": "0xf2D39dd1b3e991f23d8a61bABb1c13873640873F"
+      },
+      {
+        "name": "ProtocolFeesCollector",
+        "address": "0x5Dd8459e1889Ec166085EF96AAf18591b1AB0B88"
+      },
+      {
+        "name": "BalancerHelpers",
+        "address": "0xCFB54b5eaFe6E71FdC569736fF626D1f83a58B19"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  "20220725-protocol-fee-percentages-provider": {
+    "contracts": [
+      {
+        "name": "ProtocolFeePercentagesProvider",
+        "address": "0x73cB650e9f3CE181A684C7e28c8ee7626B448c50"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  "20230320-weighted-pool-v4": {
+    "contracts": [
+      {
+        "name": "WeightedPoolFactory",
+        "address": "0x997252b17F61fFc6Ca2fDDd7fa1Cb0cdb98f202D"
+      },
+      {
+        "name": "MockWeightedPool",
+        "address": "0x04E4BBA6BeaC4E1950a2cE8363849Ff24547fA09"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  "20230613-balancer-pool-data-queries": {
+    "contracts": [
+      {
+        "name": "BalancerPoolDataQueries",
+        "address": "0xF8cE2b85Eae6Fd899Ac517EF153dfB38d527D1F3"
+      }
+    ],
+    "status": "ACTIVE"
+  }
+}
